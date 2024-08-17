@@ -8,7 +8,7 @@ export interface ArticleInterface {
   comments: CommentInterface[]
 }
 
-export interface CategoriesInterface {
+export interface CategoryInterface {
   id: number
   title: string
   articlesId: number[]
@@ -20,4 +20,5 @@ export interface CommentInterface {
   commentatorName: string
   commentText: string
   postDate: string
+  articleId: number
 }

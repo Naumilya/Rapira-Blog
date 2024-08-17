@@ -1,29 +1,25 @@
 import type { ArticleInterface, CommentInterface } from '@/types/articles.types'
 
 export default class Article implements ArticleInterface {
-  readonly id: number
-  imagePath: string
-  title: string
-  contentText: string
-  postDate: string
-  readingTime: number
-  comments: CommentInterface[]
-
   constructor(
-    id: number,
-    imagePath: string = '',
-    title: string = '',
-    contentText: string = '',
-    postDate: string = new Date().toISOString(),
-    readingTime: number = 0,
-    comments: CommentInterface[] = []
-  ) {
-    this.id = id
-    this.imagePath = imagePath
-    this.title = title
-    this.contentText = contentText
-    this.postDate = postDate
-    this.readingTime = readingTime
-    this.comments = comments
+    readonly id: number,
+    public imagePath: string = '',
+    public title: string = '',
+    public contentText: string = '',
+    public postDate: string = new Date().toISOString(),
+    public readingTime: number = 0,
+    public comments: CommentInterface[] = []
+  ) {}
+
+  static createFrom(data: Partial<ArticleInterface>) {
+    return new this(
+      data.id ?? 0,
+      data.imagePath ?? '',
+      data.title ?? '',
+      data.contentText ?? '',
+      data.postDate ?? new Date().toISOString(),
+      data.readingTime ?? 0,
+      data.comments ?? []
+    )
   }
 }
