@@ -5,3 +5,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.header-link {
+  padding: 8px 14px;
+  border-radius: 6px;
+
+  &_active {
+    color: #3e97ff;
+    background-color: #ffffff1a;
+  }
+}

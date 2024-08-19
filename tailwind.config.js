@@ -12,8 +12,8 @@ export default {
         200: '#2884EF'
       },
       gray: {
-        100: '##F9F9F9',
-        200: '##EEF6FF',
+        100: '#F9F9F9',
+        200: '#EEF6FF',
         300: '#D8D8E5',
         400: '#A1A5B7',
         500: '#7E8299',
@@ -21,7 +21,7 @@ export default {
         900: '#181C32',
         dark: '#FFFFFF1A'
       },
-      red: '##F1416C'
+      red: '#F1416C'
     }
     // extend: {}
   },

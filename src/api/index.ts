@@ -134,7 +134,7 @@ export default {
         id: 4,
         articleId: 3,
         commentText: 'Комментарий к статье 3',
-        commentatorName: 'Настя',
+        commentatorName: 'Анастасия Дядина',
         userImagePath: '',
         postDate: ''
       },
